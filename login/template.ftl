@@ -29,6 +29,104 @@
             <script src="${script}" type="text/javascript"></script>
         </#list>
     </#if>
+	<style>
+	body {
+		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+		background-color: #00838f
+	}
+	#kc-header {
+		margin-top: 40px;
+	}
+	#kc-header-wrapper {
+		font-size: 2.25em;
+		color: #FFF;
+		text-align:center;
+	}
+	header {
+		padding: 16px 24px;
+	}
+	#kc-page-title {
+		text-align: center;
+	}
+	#kc-page-title {
+		font-weight: 500;
+	}
+	#kc-content-wrapper {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.card-pf {
+		background: #fff;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		padding: 0 20px;
+		max-width: 420px;
+		border-top: 0;
+		box-shadow: 0 0 0;
+		padding: 0 40px 40px;
+		margin-top: 32px;
+	}
+	#kc-form {
+		width: 100%;
+	}
+	input[type="text"], input[type="password"] {
+		display: block;
+		width: 100%;
+		height: 32px;
+		padding: 2px 6px;
+		font-size: 14px;
+		line-height: 1.66666667;
+		color: #363636;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #bbb;
+		border-top-color: rgb(187, 187, 187);
+		border-right-color: rgb(187, 187, 187);
+		border-bottom-color: rgb(187, 187, 187);
+		border-left-color: rgb(187, 187, 187);
+		border-radius: 0;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		margin-bottom: 24px;
+		}
+		label {
+			font-weight: 500;
+			display: inline-block;
+			font-size: 14px;
+			margin-bottom: 8px;
+			color: #635f5f;
+		}
+		#kc-form-buttons {
+			margin-top:24px;
+			text-align: center;
+		}
+		input[type="submit"] {
+		background-image: none;
+		background-color: #058590;
+		padding: 16px;
+		width: 100%;
+		font-size: 18px;
+		color: #FFF;
+		box-sizing: border-box;
+		box-shadow: none;
+		border: 0;
+		}
+		input[type="submit"]:hover {
+			background-color: #055f67;
+		}
+		a {
+			color: #1994d0;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #177daf;
+		}
+		#kc-info {
+			margin-top: 24px;
+			color: #777;
+		}
+	</style>
 </head>
 
 <body class="${properties.kcBodyClass!}">
@@ -36,7 +134,7 @@
     <div id="kc-header" class="${properties.kcHeaderClass!}">
       <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
     </div>
-    <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
+    <div class="card-pf ${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
       <header class="${properties.kcFormHeaderClass!}">
         <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
             <div id="kc-locale">
