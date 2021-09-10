@@ -2,6 +2,9 @@
     background-image: none;
     background-color: #016871;
 }
+#kc-header {
+    margin-top: 0;
+}
 .btn-primary {
     background-image: none;
     background-color: #00838f;
@@ -20,5 +23,10 @@
 @media (max-width: 767px) {
     #kc-header-wrapper {
         color: #FFF;
+    }
+}
+@media (min-width: 768px) {
+    .login-pf-page .login-pf-header {
+        margin-bottom: 10px;
     }
 }
