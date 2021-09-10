@@ -41,9 +41,6 @@
         text-transform: capitalize;
         line-height: 1.3;
 	}
-	header {
-		padding: 16px 24px;
-	}
 	#kc-page-title {
 		text-align: center;
 	}
