@@ -41,6 +41,7 @@
 		font-size: 2.25em;
 		color: #FFF;
 		text-align:center;
+        text-transform: capitalize;
 	}
 	header {
 		padding: 16px 24px;
@@ -126,6 +127,13 @@
 			margin-top: 24px;
 			color: #777;
 		}
+        #kc-site-name {
+            font-size: 2em;
+            color: #FFF;
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 8px;
+        }
 	</style>
 </head>
 
@@ -133,6 +141,7 @@
   <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
       <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+      <div id="kc-site-name">${__KEYCLOAK_SITE_NAME}</div>
     </div>
     <div class="card-pf ${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
       <header class="${properties.kcFormHeaderClass!}">
