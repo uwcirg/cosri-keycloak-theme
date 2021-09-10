@@ -91,7 +91,7 @@
 			font-weight: 500;
 			display: inline-block;
 			font-size: 14px;
-			margin-bottom: 8px;
+			margin-bottom: 4px;
 			color: #635f5f;
 		}
 		#kc-form-buttons {
