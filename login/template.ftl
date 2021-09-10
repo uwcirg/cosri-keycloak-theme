@@ -34,14 +34,12 @@
 		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 		background-color: #00838f
 	}
-	#kc-header {
-		margin-top: 40px;
-	}
 	#kc-header-wrapper {
 		font-size: 2.25em;
 		color: #FFF;
 		text-align:center;
         text-transform: capitalize;
+        line-height: 1.3;
 	}
 	header {
 		padding: 16px 24px;
