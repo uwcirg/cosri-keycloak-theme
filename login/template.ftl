@@ -40,6 +40,7 @@
 		text-align:center;
         text-transform: capitalize;
         line-height: 1.3;
+        font-weight: 500;
 	}
 	#kc-page-title {
 		text-align: center;
