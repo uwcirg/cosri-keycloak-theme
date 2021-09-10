@@ -2,6 +2,18 @@
     background-image: none;
     background-color: #016871;
 }
+.login-pf-page {
+    padding-top: 0;
+}
+.login-pf-page .login-pf-header h1 {
+    font-size: 24px;
+}
+#kc-header {
+    margin-top: 0;
+}
+h1#kc-page-title {
+    margin-top: 24px;
+}
 .btn-primary {
     background-image: none;
     background-color: #00838f;
@@ -20,5 +32,10 @@
 @media (max-width: 767px) {
     #kc-header-wrapper {
         color: #FFF;
+    }
+}
+@media (min-width: 768px) {
+    .login-pf-page .login-pf-header {
+        margin-bottom: 10px;
     }
 }

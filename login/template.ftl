@@ -34,16 +34,13 @@
 		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 		background-color: #00838f
 	}
-	#kc-header {
-		margin-top: 40px;
-	}
 	#kc-header-wrapper {
 		font-size: 2.25em;
 		color: #FFF;
 		text-align:center;
-	}
-	header {
-		padding: 16px 24px;
+        text-transform: capitalize;
+        line-height: 1.3;
+        font-weight: 500;
 	}
 	#kc-page-title {
 		text-align: center;
@@ -94,7 +91,7 @@
 			font-weight: 500;
 			display: inline-block;
 			font-size: 14px;
-			margin-bottom: 8px;
+			margin-bottom: 4px;
 			color: #635f5f;
 		}
 		#kc-form-buttons {
@@ -126,6 +123,13 @@
 			margin-top: 24px;
 			color: #777;
 		}
+        #kc-site-name {
+            font-size: 2em;
+            color: #FFF;
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 8px;
+        }
 	</style>
 </head>
 
@@ -133,6 +137,7 @@
   <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
       <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+      <div id="kc-site-name">${properties.siteName}</div>
     </div>
     <div class="card-pf ${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
       <header class="${properties.kcFormHeaderClass!}">
