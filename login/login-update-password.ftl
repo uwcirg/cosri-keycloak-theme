@@ -13,7 +13,7 @@
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
                     <input type="password" id="password-new" name="password-new" class="${properties.kcInputClass!}" autofocus autocomplete="new-password" />
-                    <div class="suggestion">${msg("passwordPolicy")}</div>
+                    <div class="suggestion">${kcSanitize(msg("passwordPolicy"))?no_esc}</div>
                 </div>
             </div>
 
