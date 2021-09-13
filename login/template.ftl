@@ -137,7 +137,7 @@
   <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
       <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
-      <div id="kc-system-type">${properties.systemType}</div>
+      <div id="kc-system-type">${kcSanitize(msg("systemType", properties.systemType))?no_esc}</div>
       <div id="kc-site-name">${properties.siteName}</div>
     </div>
     <div class="card-pf ${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
