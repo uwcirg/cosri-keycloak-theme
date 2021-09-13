@@ -29,6 +29,9 @@ h1#kc-page-title {
 #kc-login {
     padding: 8px;
 }
+#kc-header-wrapper {
+    padding: 62px 10px 12px;
+}
 @media (max-width: 767px) {
     #kc-header-wrapper {
         color: #FFF;
