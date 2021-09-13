@@ -4,9 +4,13 @@
 }
 .login-pf-page {
     padding-top: 0;
+    background-color: #016871;
 }
 .login-pf-page .login-pf-header h1 {
     font-size: 24px;
+}
+#kc-info-wrapper:empty {
+    background-color: #FFF;
 }
 #kc-header-wrapper {
     padding: 62px 10px 8px;
