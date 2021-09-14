@@ -22,6 +22,12 @@
 h1#kc-page-title {
     margin-top: 24px;
 }
+.card-pf form.form-actions .btn {
+    margin-bottom: 16px;
+}
+.btn {
+    border-radius: 24px;
+}
 .btn-primary {
     background-image: none;
     background-color: #00838f;
