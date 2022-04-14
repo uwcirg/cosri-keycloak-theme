@@ -27,6 +27,9 @@ html.login-pf {
         margin-bottom: 10px;
     }
 }
+#kc-info-wrapper {
+    background-color: #FFF;
+}
 #kc-info-wrapper:empty {
     background-color: #FFF;
 }
