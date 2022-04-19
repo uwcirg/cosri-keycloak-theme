@@ -1,5 +1,9 @@
 :root {
     --body-bg-color: #016871;
+    --primary-color: #058590;
+    --primary-hover-color: #036770;
+    --section-border-color: #dcdfdc;
+    --title-color: #003f44;
 }
 html.login-pf {
     background: var(--body-bg-color);
@@ -12,11 +16,12 @@ html.login-pf {
 }
 .login-pf-page {
     padding-top: 0;
+    padding-bottom: 24px;
     background-color: var(--body-bg-color);
 }
 @media (min-width: 768px) {
     .login-pf-page .card-pf {
-        padding: 20px 32px 40px 32px;
+        padding: 20px 32px 20px 32px;
     }
 }
 .login-pf-page .login-pf-header h1 {
@@ -28,10 +33,9 @@ html.login-pf {
     }
 }
 #kc-info-wrapper {
-    background-color: #FFF;
-}
-#kc-info-wrapper:empty {
-    background-color: #FFF;
+    background-color: transparent;
+    padding: 0;
+    text-align: left;
 }
 #kc-header-wrapper {
     padding: 56px 10px 8px;
@@ -46,10 +50,6 @@ html.login-pf {
     #kc-header-wrapper {
         color: #FFF;
     }
-}
-#kc-page-title {
-    text-align: center;
-    font-weight: 500;
 }
 #kc-site-name, #kc-system-type {
     font-size: 1.75em;
@@ -67,6 +67,12 @@ html.login-pf {
     margin-top: 0;
     margin-bottom: 24px;
 }
+#kc-page-title {
+    text-align: center;
+    font-weight: 500;
+    color: var(--title-color);
+    padding-bottom: 4px;
+}
 h1#kc-page-title {
     margin-top: 24px;
 }
@@ -81,7 +87,10 @@ h1#kc-page-title {
     display: none;
 }
 #kc-info {
-    margin-top: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
     color: #777;
 }
 .card-pf {
@@ -100,8 +109,8 @@ h1#kc-page-title {
     margin-bottom: 32px;
 }
 .alert {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .alert-error {
     color: #9b0202;
@@ -170,4 +179,38 @@ label {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background-color: #016871;
+}
+.kc-social-links {
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid var(--section-border-color);
+}
+.kc-social-links li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+a.zocial {
+    color: var(--primary-color);
+    text-shadow: none;
+    background-image: none;
+    background-color: #FFF;
+    border: 1px solid var(--primary-color);
+    text-shadow: none;
+}
+a.zocial:hover,
+a.zocial:active,
+a.zocial:focus {
+    background-image: none;
+    background-color: var(--primary-hover-color);
+    color: #FFF;
+}
+a.zocial.saml {
+    background-color: #4b2e83;
+    color: #FFF;
+    border: 0;
+}
+a.zocial.saml:hover,
+a.zocial.saml:active,
+a.zocial.saml:focus {
+    background-color: #301e56;
 }
